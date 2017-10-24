@@ -51,10 +51,9 @@
       <router-view /> component
       if using subRoutes
     -->
-    <div class="layout-padding logo-container non-selectable no-pointer-events">
-      <div class="logo" :style="position">
-        <img src="~assets/quasar-logo-full.svg">
-      </div>
+    <div class="layout-padding">
+      <q-fab color="primary" icon="add" direction="left"></q-fab>
+
     </div>
   </q-layout>
 </template>
@@ -73,7 +72,8 @@ import {
   QListHeader,
   QItem,
   QItemSide,
-  QItemMain
+  QItemMain,
+  QFab
 } from 'quasar'
 
 const
@@ -106,7 +106,8 @@ export default {
     QListHeader,
     QItem,
     QItemSide,
-    QItemMain
+    QItemMain,
+    QFab
   },
   data () {
     return {
@@ -206,16 +207,4 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-.logo-container
-  width 255px
-  height 242px
-  perspective 800px
-  position absolute
-  top 50%
-  left 50%
-  transform translateX(-50%) translateY(-50%)
-.logo
-  position absolute
-  transform-style preserve-3d
-</style>
+<style></style>
